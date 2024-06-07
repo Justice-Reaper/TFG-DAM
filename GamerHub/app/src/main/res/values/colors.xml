@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1DA1F2</color>
+    <color name="colorSecondary">#FFFFFF</color>
+    <color name="colorSecondaryContrast">#000000</color>
+    <color name="colorSecondaryDarker">#FAFAFA</color>
+    <color name="colorGray">#D5D2D2</color>
+    <color name="colorGrayLight">#F1EFEF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLine">#E1E8ED</color>
+    <color name="colorNavBarPressed">#F0F0F0</color>
+</resources>

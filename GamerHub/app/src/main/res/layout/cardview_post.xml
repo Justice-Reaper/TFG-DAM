@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/colorSecondaryDarker"
+    app:strokeColor="@color/colorLine"
+    app:strokeWidth="1.5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageViewPostCard"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/textViewTitlePostCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:maxLines="1"
+            android:text="Titulo del juego"
+            android:textColor="@color/colorSecondaryContrast"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewUsernamePostCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de usuario"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="12dp"
+            android:maxLines="1"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/textViewDescriptionPostCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripcion del juego..."
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/colorSecondaryContrast"
+            android:maxLines="2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGray"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewLike"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/icon_like_grey" />
+
+            <TextView
+                android:id="@+id/textViewLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="0 Me gusta" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

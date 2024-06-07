@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp" >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_linear_layout"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nuevo mensaje"
+            android:textColor="@color/colorSecondary"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textViewDateMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:text="Fecha"
+            android:textColor="@color/colorGray"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/imageViewViewedMessage"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/icon_check_grey" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.PostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical"
+            android:background="@color/colorSecondary" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="CREAR PUBLICACIÓN"
+                android:textColor="@color/colorSecondaryContrast"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="21dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp">
+
+                <androidx.cardview.widget.CardView
+                    app:cardElevation="0dp"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="@color/colorSecondary"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="10dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageViewPost1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/upload_image"
+                        android:scaleType="centerCrop"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    app:cardElevation="0dp"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="@color/colorSecondary"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewPost2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/upload_image"
+                        android:scaleType="centerCrop"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_videogame"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputVideoGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre del juego"
+                    android:inputType="text"
+                    android:maxLength="50"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_description"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Descripcion"
+                    android:inputType="textMultiLine"
+                    android:maxLength="2200"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CATEGORIAS"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="17dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGray"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp">
+
+                <ImageView
+                    app:tint="@color/colorSecondaryContrast"
+                    android:id="@+id/imageViewPc"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icon_pc"
+                    android:background="@color/colorSecondary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PC"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSecondaryContrast"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp">
+
+                <ImageView
+                    app:tint="@color/colorSecondaryContrast"
+                    android:id="@+id/imageViewPS4"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icon_ps4"
+                    android:background="@color/colorSecondary"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PS4"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSecondaryContrast"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp">
+
+                <ImageView
+                    android:background="@color/colorSecondary"
+                    android:id="@+id/imageViewXbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icon_xbox"
+                    android:padding="5dp"
+                    app:tint="@color/colorSecondaryContrast"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XBOX"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSecondaryContrast"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp">
+
+                <ImageView
+                    android:background="@color/colorSecondary"
+                    android:id="@+id/imageViewNintendo"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icon_nintendo"
+                    app:tint="@color/colorSecondaryContrast" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NINTENDO"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSecondaryContrast"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PUBLICAR"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorWhite" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_left_post"
+        android:layout_margin="15dp"
+        android:scaleType="centerCrop"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

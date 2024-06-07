@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GamerHub" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/colorSecondary</item>
+        <item name="android:windowBackground">@color/colorSecondary</item>
+        <item name="android:navigationBarColor">@color/colorSecondary</item>
+        <item name="colorSecondaryContainer">@color/colorNavBarPressed</item>
+        <item name="colorSurfaceContainer">@color/colorSecondary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+        <item name="android:screenOrientation">portrait</item>
+
+    </style>
+
+    <style name="Theme.GamerHub" parent="Base.Theme.GamerHub" />
+
+    <style name="SplashScreenTheme" parent="Base.Theme.GamerHub">
+        <item name="android:windowBackground">@drawable/splash_background_dark</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowSplashScreenBackground">@color/colorBlack</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_white</item>
+    </style>
+
+    <style name="ToolbarName" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/colorSecondaryContrast</item>
+        <item name="titleTextColor">@color/colorSecondaryContrast</item>
+    </style>
+
+    <style name="fab_rounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+</resources>

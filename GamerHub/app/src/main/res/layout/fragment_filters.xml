@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FiltersFragment"
+    android:layout_marginBottom="65dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <com.google.android.material.card.MaterialCardView
+           app:cardCornerRadius="10dp"
+           app:cardBackgroundColor="@color/colorSecondaryDarker"
+           android:id="@+id/cardViewPs4"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_gravity="center_vertical"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="40dp"
+           app:cardElevation="2dp"
+           app:strokeColor="@color/colorLine"
+           app:strokeWidth="2dp"
+
+           >
+
+           <LinearLayout
+               android:layout_gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               >
+
+               <ImageView
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:src="@drawable/icon_ps4"
+                   android:background="@color/colorSecondaryDarker"
+                   android:layout_gravity="center_vertical"
+                   android:padding="7dp"
+                   app:tint="@color/colorSecondaryContrast" />
+
+               <TextView
+                   android:textStyle="bold"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical"
+                   android:layout_marginLeft="20dp"
+                   android:textSize="20dp"
+                   android:text="PLAYSTATION" />
+
+           </LinearLayout>
+
+       </com.google.android.material.card.MaterialCardView>
+
+      <com.google.android.material.card.MaterialCardView
+          app:cardCornerRadius="10dp"
+          app:cardBackgroundColor="@color/colorSecondaryDarker"
+          android:id="@+id/cardViewXBOX"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="20dp"
+          app:cardElevation="2dp"
+          app:strokeColor="@color/colorLine"
+          app:strokeWidth="2dp"
+          >
+
+          <LinearLayout
+              android:layout_gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+             >
+
+              <ImageView
+                  android:layout_marginLeft="10dp"
+                  app:tint="@color/colorSecondaryContrast"
+                  android:background="@color/colorSecondaryDarker"
+                  android:layout_width="70dp"
+                  android:layout_height="70dp"
+                  android:src="@drawable/icon_xbox"
+                  android:layout_gravity="center_vertical"
+                  android:padding="10dp" />
+
+              <TextView
+                  android:textStyle="bold"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="20dp"
+                  android:textSize="20dp"
+                  android:text="XBOX" />
+
+          </LinearLayout>
+
+      </com.google.android.material.card.MaterialCardView>
+
+
+       <com.google.android.material.card.MaterialCardView
+           app:cardBackgroundColor="@color/colorSecondaryDarker"
+           android:id="@+id/cardViewNINTENDO"
+           app:cardCornerRadius="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="20dp"
+           app:cardElevation="2dp"
+           app:strokeColor="@color/colorLine"
+           app:strokeWidth="2dp"
+           >
+
+           <LinearLayout
+               android:layout_gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               >
+
+               <ImageView
+                   app:tint="@color/colorSecondaryContrast"
+                   android:background="@color/colorSecondaryDarker"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:src="@drawable/icon_nintendo"
+                   android:layout_gravity="center_vertical"
+                   android:padding="10dp" />
+
+               <TextView
+                   android:textStyle="bold"
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical"
+                   android:layout_marginLeft="20dp"
+                   android:textSize="20dp"
+                   android:text="NINTENDO" />
+
+           </LinearLayout>
+
+       </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            app:cardBackgroundColor="@color/colorSecondaryDarker"
+            android:id="@+id/cardViewPC"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            app:strokeColor="@color/colorLine"
+            app:strokeWidth="2dp"
+            >
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+                <ImageView
+                    app:tint="@color/colorSecondaryContrast"
+                    android:background="@color/colorSecondaryDarker"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icon_pc"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp"
+                    android:text="PC" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+   </LinearLayout>
+</FrameLayout>

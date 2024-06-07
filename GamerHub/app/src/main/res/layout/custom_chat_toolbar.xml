@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorSecondary">
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginTop="10dp"
+        app:tint="@color/colorSecondaryContrast" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:civ_circle_background_color="@color/colorGray"
+        android:src="@drawable/ic_person"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageViewBack"/>
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:id="@+id/textViewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorSecondaryContrast"
+        android:textSize="18dp"
+        android:maxLines="1"
+        android:layout_toRightOf="@+id/circleImageProfile" />
+
+    <TextView
+        android:id="@+id/textViewRelativeTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondaryContrast"
+        android:text=""
+        android:maxLines="1"
+        android:textSize="12dp"
+        android:layout_toRightOf="@+id/circleImageProfile"
+        android:layout_below="@+id/textViewUsername" />
+
+    <Button
+        android:layout_marginLeft="5dp"
+        android:onClick="goToShowProfile"
+        android:id="@+id/goToUserActivity"
+        android:layout_toEndOf="@+id/imageViewBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        />
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment"
+    android:layout_marginBottom="50dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorSecondary"
+        >
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            style="@style/MaterialSearchBarLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mt_hint="Buscar ..."
+            app:mt_placeholder="Buscar"
+            app:mt_searchBarColor="@color/colorSecondary"
+            app:mt_maxSuggestionsCount="10"
+            app:mt_placeholderColor="@color/colorSecondaryContrast"
+            app:mt_textColor="@color/colorSecondaryContrast"
+            app:mt_searchIconTint="@color/colorSecondaryContrast"
+            app:mt_menuIconTint="@color/colorSecondaryContrast"
+            app:mt_clearIconTint="@color/colorSecondaryContrast"
+            app:mt_hintColor="@color/colorGray"
+            app:mt_backIconTint="@color/colorSecondaryContrast"
+            android:id="@+id/searchBar"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="36dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        app:shapeAppearanceOverlay="@style/fab_rounded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:tint="@color/colorWhite"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="47dp"
+        android:layout_marginRight="10dp"/>
+
+</FrameLayout>

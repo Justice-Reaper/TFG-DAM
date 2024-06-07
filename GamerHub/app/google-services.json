@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "373092382315",
+    "project_id": "gamerhub-3b9f5",
+    "storage_bucket": "gamerhub-3b9f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373092382315:android:aa3fa2f0e043310fe4232e",
+        "android_client_info": {
+          "package_name": "com.optic.gamerhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0OzLwmbBWeO8fAFHb58-pyu_rUfLue2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

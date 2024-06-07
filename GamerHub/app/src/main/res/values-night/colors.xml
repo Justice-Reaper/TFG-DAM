@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1DA1F2</color>
+    <color name="colorSecondary">#000000</color>
+    <color name="colorSecondaryContrast">#FFFFFF</color>
+    <color name="colorNavBarPressed">#1A1A1A</color>
+    <color name="colorSecondaryDarker">#111111</color>
+    <color name="colorGray">#D5D2D2</color>
+    <color name="colorGrayLight">#F1EFEF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLine">#45505A</color>
+    <color name="colorBlack">#000000</color>
+</resources>
+
+
